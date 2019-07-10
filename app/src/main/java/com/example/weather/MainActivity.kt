@@ -2,6 +2,8 @@ package com.example.weather
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.Navigation
+import com.example.weather.presentation.todayweather.TodayFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,11 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        if (savedInstanceState == null) {
-            supportFragmentManager
-                .beginTransaction()
-                .add(R.id.fragment_holder, myFragment(), "weather")
-                .commit()
-        }
+
+
     }
 }
