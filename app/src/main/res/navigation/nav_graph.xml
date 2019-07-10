@@ -7,7 +7,7 @@
     <fragment
             android:id="@+id/todayFragment"
             android:name="com.example.weather.presentation.todayweather.TodayFragment"
-            android:label="TodayFragment">
+            android:label="@string/today_fragment_title">
         <action
                 android:id="@+id/action_todayFragment_to_forecastFragment2"
                 app:destination="@id/forecastFragment"/>
@@ -15,6 +15,6 @@
     <fragment
             android:id="@+id/forecastFragment"
             android:name="com.example.weather.presentation.forecastweather.ForecastFragment"
-            android:label="ForecastFragment"/>
+            android:label="@string/forecast_fragment_title"/>
 
 </navigation>
