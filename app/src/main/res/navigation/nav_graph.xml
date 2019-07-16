@@ -3,18 +3,11 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/fragment_navigation"
-            app:startDestination="@id/todayFragment">
-    <fragment
-            android:id="@+id/todayFragment"
-            android:name="com.example.weather.presentation.todayweather.TodayFragment"
-            android:label="@string/today_fragment_title">
-        <action
-                android:id="@+id/action_todayFragment_to_forecastFragment2"
-                app:destination="@id/forecastFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/forecastFragment"
-            android:name="com.example.weather.presentation.forecastweather.ForecastFragment"
-            android:label="@string/forecast_fragment_title"/>
+            app:startDestination="@id/masterWeatherFragment">
 
+    <fragment
+            android:id="@+id/masterWeatherFragment"
+            android:name="com.example.weather.presentation.master.MasterWeatherFragment"
+            android:label="@string/master_weather_title"
+            tools:layout="@layout/fragment_master_weather"/>
 </navigation>

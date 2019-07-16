@@ -30,8 +30,8 @@ dependencies {
         navVersion = "2.1.0-alpha06"
         navVersionKtx = "2.1.0-alpha06"
         espressoVersion = "3.2.0"
-        supportLibraryVersion = "26.1.0"
-        materialVersion="1.1.0-alpha07"
+        supportLibraryVersion = "28.0.0"
+        materialVersion = "1.1.0-alpha07"
 
     }
 
@@ -55,6 +55,14 @@ dependencies {
     // material design
     implementation "com.google.android.material:material:${materialVersion}"
 
+    //card view
+    implementation "com.android.support:cardview-v7:${supportLibraryVersion}"
+
+    //AndroidX
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    // recycler view
+    implementation "com.android.support:recyclerview-v7:${supportLibraryVersion}"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
