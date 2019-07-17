@@ -11,8 +11,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:gravity="center"
-            android:background="@drawable/forecast_circle"
-            >
+            android:background="@drawable/forecast_circle">
 
         <ImageView
                 android:id="@+id/forecast_circle_icon"
@@ -23,17 +22,21 @@
 
         </ImageView>
     </TextView>
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/space_between_content_large">
+
         <TextView
-                android:id="@+id/weather_disctiption"
+                android:id="@+id/weather_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/space_between_content_large"
+                android:layout_marginStart="@dimen/space_between_content_large"
                 tools:text="xxxxxxxxx xxx"/>
+
         <TextView
                 android:id="@+id/temperature_degree"
                 android:layout_width="wrap_content"

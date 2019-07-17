@@ -13,18 +13,18 @@ class WeatherViewHolder(inflater: LayoutInflater, parent: ViewGroup) : RecyclerV
     )
 ) {
 
-    private var forecastWeatherDiscription: TextView? = null
+    private var forecastWeatherDescription: TextView? = null
     private var forecastWeatherTemperature: TextView? = null
     private var forecastWeatherIcon: ImageView? = null
 
     init {
-        forecastWeatherDiscription = itemView.findViewById(R.id.weather_disctiption)
+        forecastWeatherDescription = itemView.findViewById(R.id.weather_description)
         forecastWeatherTemperature = itemView.findViewById(R.id.temperature_degree)
         forecastWeatherIcon = itemView.findViewById(R.id.forecast_circle_icon)
     }
 
     fun bind(data: ForecastWeatherInfo) {
-        forecastWeatherDiscription?.text = data.weatherDesciption
+        forecastWeatherDescription?.text = data.weatherDescription
         forecastWeatherTemperature?.text = data.temperature
     }
 }
