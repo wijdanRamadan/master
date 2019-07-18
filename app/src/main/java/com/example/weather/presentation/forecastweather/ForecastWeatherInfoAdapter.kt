@@ -14,8 +14,9 @@ class ForecastWeatherInfoAdapter(private val list: List<ForecastWeatherInfo>) :
 
     override fun onBindViewHolder(holder: WeatherViewHolder, position: Int) {
 
-        val info: ForecastWeatherInfo= list[position]
-        holder.bind(info)   }
+        val info: ForecastWeatherInfo = list[position]
+        holder.bind(info)
+    }
 
     override fun getItemCount(): Int = list.size
 }

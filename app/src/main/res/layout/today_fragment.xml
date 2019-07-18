@@ -66,8 +66,8 @@
             </LinearLayout>
 
             <TextView
-                    android:layout_gravity="end"
                     android:id="@+id/temperature"
+                    android:layout_gravity="end"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     tools:text="28"
@@ -105,13 +105,20 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/space_between_content"
-                                android:src="@drawable/test"/>
+                                android:src="@drawable/rain"/>
 
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                tools:text="hiii"
-                                android:layout_margin="@dimen/space_between_content"/>
+                                tools:text="hii"
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:layout_marginStart="@dimen/space_between_content"
+                                android:layout_marginLeft="@dimen/space_between_content"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:text="@string/percentage"/>
 
                     </LinearLayout>
 
@@ -121,16 +128,21 @@
                             android:orientation="horizontal">
 
                         <ImageView
+                                android:id="@+id/windDirectionImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/space_between_content"
-                                android:src="@drawable/test"/>
+                                android:src="@drawable/wind_sign"/>
 
                         <TextView
+                                android:id="@+id/windDirectionValue"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/space_between_content"
+                                android:layout_marginLeft="@dimen/space_between_content"
+                                android:layout_marginTop="@dimen/space_between_content_large"
                                 tools:text="hii"
-                                android:layout_margin="@dimen/space_between_content"/>
+                                />
 
                     </LinearLayout>
 
@@ -142,10 +154,7 @@
                         android:orientation="vertical"
                         android:layout_marginRight="25dp"
                         android:layout_marginEnd="25dp"
-                        android:layout_marginLeft="@dimen/space_between_content_large"
-                        android:layout_marginStart="@dimen/space_between_content_large"
-                        android:layout_marginBottom="@dimen/space_between_content_large"
-                        android:layout_marginTop="@dimen/space_between_content_large">
+                        android:layout_margin="@dimen/space_between_content_large">
 
                     <LinearLayout
                             android:layout_width="wrap_content"
@@ -153,16 +162,25 @@
                             android:orientation="horizontal">
 
                         <ImageView
+                                android:id="@+id/rainfallMeasurementImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/space_between_content"
-                                android:src="@drawable/test"/>
+                                android:src="@drawable/water"/>
 
+                        <TextView
+                                android:id="@+id/rainfallMeasurementValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:layout_marginLeft="@dimen/space_between_content"
+                                tools:text="hii"
+                                />
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                tools:text="hii"
-                                android:layout_margin="@dimen/space_between_content"/>
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:text="@string/rainfallMeasurementUnit"/>
 
                     </LinearLayout>
 
@@ -172,16 +190,26 @@
                             android:orientation="horizontal">
 
                         <ImageView
+                                android:id="@+id/windSpeedImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="@dimen/space_between_content"
-                                android:src="@drawable/test"/>
+                                android:layout_marginLeft="@dimen/space_between_content"
+                                android:layout_marginRight="@dimen/space_between_content"
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:src="@drawable/wind"/>
 
+                        <TextView
+                                android:id="@+id/windSpeedValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:layout_marginLeft="@dimen/space_between_content"
+                                tools:text="hii"/>
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                tools:text="hiiiiiiii"
-                                android:layout_margin="@dimen/space_between_content"/>
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:text="@string/windSpeedUnit"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -192,10 +220,7 @@
                         android:orientation="vertical"
                         android:layout_marginRight="25dp"
                         android:layout_marginEnd="25dp"
-                        android:layout_marginLeft="@dimen/space_between_content_large"
-                        android:layout_marginStart="@dimen/space_between_content_large"
-                        android:layout_marginBottom="@dimen/space_between_content_large"
-                        android:layout_marginTop="@dimen/space_between_content_large">
+                       android:layout_margin="@dimen/space_between_content_large">
 
                     <LinearLayout
                             android:layout_width="wrap_content"
@@ -203,35 +228,48 @@
                             android:orientation="horizontal">
 
                         <ImageView
+                                android:id="@+id/pressureImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="@dimen/space_between_content"
-                                android:src="@drawable/test"/>
+                                android:layout_marginTop="@dimen/space_between_content"
+                                android:src="@drawable/pressure"/>
 
+                        <TextView
+                                android:id="@+id/pressureValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="hii"
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:layout_marginLeft="@dimen/space_between_content"/>
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                tools:text="hiiiiii"
-                                android:layout_margin="@dimen/space_between_content"/>
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:text="@string/pressureUnit"
+                                />
 
                     </LinearLayout>
 
                     <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/space_between_content">
 
                         <ImageView
+                                android:id="@+id/sunRiseImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/space_between_content"
-                                android:src="@drawable/test"/>
+                                android:src="@drawable/sunset"/>
 
                         <TextView
+                                android:id="@+id/sunRiseText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                tools:text="hiiiii"
-                                android:layout_margin="@dimen/space_between_content"/>
+                                android:layout_marginTop="@dimen/space_between_content_large"
+                                android:layout_marginLeft="@dimen/space_between_content"
+                                tools:text="hiiiii"/>
 
                     </LinearLayout>
                 </LinearLayout>

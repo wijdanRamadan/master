@@ -6,9 +6,11 @@
     <string name="action_settings">settings</string>
     <string name="action_about">about</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="master_weather_title">Weather</string>
     <string name="weather_icon">weather icon</string>
+    <string name="windSpeedUnit">Km/h</string>
+    <string name="pressureUnit">hPa</string>
+    <string name="rainfallMeasurementUnit">mm</string>
+    <string name="percentage">%</string>
 
 </resources>
