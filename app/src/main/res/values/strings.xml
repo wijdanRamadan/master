@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="today_fragment_title">Today</string>
+    <string name="forecast_fragment_title">Forecast</string>
+    <string name="toolbar_title">Weather</string>
+    <string name="action_settings">settings</string>
+    <string name="action_about">about</string>
+
+    <string name="master_weather_title">Weather</string>
+    <string name="weather_icon">weather icon</string>
+    <string name="windSpeedUnit">Km/h</string>
+    <string name="pressureUnit">hPa</string>
+    <string name="rainfallMeasurementUnit">mm</string>
+    <string name="percentage">%</string>
+
 </resources>
